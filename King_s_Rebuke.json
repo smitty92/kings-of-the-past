@@ -1,0 +1,73 @@
+{
+	"siteVersion": "1.132.3",
+	"_meta": {
+		"sources": [
+			{
+				"json": "KingsofThePast",
+				"abbreviation": "KOTP",
+				"full": "Kings of The Past",
+				"url": "",
+				"authors": [
+					"Dillon Smith"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1627091276,
+		"dateLastModified": 1627091276
+	},
+	"spell": [
+		{
+			"name": "King's Rebuke",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "damaged"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You point your finger, and the creature that damaged you is momentarily surrounded by an undead aura. The creature must make a Constitution saving throw. It takes ({@damage 2d10})  necrotic damage on a failed save, or half as much"
+			],
+			"source": "KingsofThePast",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"abilityCheck": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			]
+		}
+	]
+}
