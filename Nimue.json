@@ -1,0 +1,214 @@
+{
+	"siteVersion": "1.132.3",
+	"_meta": {
+		"sources": [
+			{
+				"json": "KingsofThePast",
+				"abbreviation": "KOTP",
+				"full": "Kings of The Past",
+				"url": "",
+				"authors": [
+					"Dillon Smith"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1627091239,
+		"dateLastModified": 1627091239
+	},
+	"monster": [
+		{
+			"name": "Nimue",
+			"source": "KingsofThePast",
+			"page": 347,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				},
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 22",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 14,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"arcana": "+7",
+				"history": "+7"
+			},
+			"passive": 11,
+			"languages": [
+				"any four languages"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Nimue is an 11th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The mage has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell mind sliver|TCE}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step}",
+								"{@spell suggestion}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell fly}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell greater invisibility}",
+								"{@spell ice storm}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell far step|XGE}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/mage.mp3?v=1.132.3"
+			},
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"hasFluff": true,
+			"tokenUrl": "https://5e.tools/img/MM/Mage.png?v=1.132.3",
+			"fluff": {
+				"name": "Mage",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Mages spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference."
+								]
+							}
+						]
+					}
+				]
+			},
+			"level": 11,
+			"conditionImmune": [
+				"grappled",
+				"restrained"
+			],
+			"mythic": [
+				{
+					"name": "Water of Life",
+					"entries": [
+						"All water based allies heal for 2d6 damage"
+					]
+				},
+				{
+					"name": "One with the water",
+					"entries": [
+						"A water creature can instantly teleport to any unoccupied space within 30ft."
+					]
+				},
+				{
+					"name": "Avalon's Wrath",
+					"entries": [
+						"All non water based targets must succeed a {@dc 14} Dex save or go {@condition prone}."
+					]
+				}
+			],
+			"mythicHeader": [
+				"Lair Actions"
+			],
+			"isNamedCreature": true
+		}
+	]
+}
