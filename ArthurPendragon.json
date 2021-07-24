@@ -1,0 +1,282 @@
+{
+	"siteVersion": "1.132.3",
+	"_meta": {
+		"sources": [
+			{
+				"json": "KingsofThePast",
+				"abbreviation": "KOTP",
+				"full": "Kings of The Past",
+				"url": "",
+				"authors": [
+					"Dillon Smith"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1627091194,
+		"dateLastModified": 1627091194
+	},
+	"monster": [
+		{
+			"name": "Arthur Pendragon",
+			"source": "KingsofThePast",
+			"page": 76,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				10,
+				{
+					"ac": 19,
+					"from": [
+						"{@item adamantine plate armor}"
+					],
+					"braces": true
+				},
+				{
+					"ac": 21,
+					"from": [
+						"{@item +1 shield}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d10 + 60",
+				"average": 170
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 11,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 20,
+			"save": {
+				"str": "+2",
+				"dex": "+0",
+				"con": "+8",
+				"cha": "+10",
+				"int": "+1",
+				"wis": "+2"
+			},
+			"skill": {
+				"arcana": "+1",
+				"acrobatics": "+0",
+				"animal handling": "+2",
+				"athletics": "+2",
+				"deception": "+10",
+				"history": "+6",
+				"insight": "+2",
+				"intimidation": "+10",
+				"investigation": "+1",
+				"medicine": "+2",
+				"nature": "+1",
+				"perception": "+2",
+				"performance": "+10",
+				"persuasion": "+10",
+				"religion": "+1",
+				"sleight of hand": "+0",
+				"stealth": "+0",
+				"survival": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Draconic",
+				"Undercommon",
+				"Druidic"
+			],
+			"cr": "15",
+			"languageTags": [
+				"C",
+				"DR",
+				"U",
+				"DU"
+			],
+			"damageTags": [
+				"S",
+				"R"
+			],
+			"tokenUrl": "https://5e.tools/img/RoT/Red Wizard.png?v=1.132.0",
+			"level": 14,
+			"isNpc": true,
+			"shortName": true,
+			"vulnerable": [
+				"radiant"
+			],
+			"resist": [
+				"fire",
+				{
+					"special": "Critical Hits"
+				}
+			],
+			"immune": [
+				"necrotic"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Arthur can use 3 melee attacks"
+					]
+				},
+				{
+					"name": "Excaliber",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 12}) slashing damage, plus 4 ({@damage 1d8}) radiant damage."
+					]
+				},
+				{
+					"name": "Fear the King",
+					"entries": [
+						"As an action, the Arthur channels the darkest emotions and focuses them into a burst of magical menace. Each creature of the Arthur's choice within 30 feet of the him must make a Wisom saving throw if it can see the Arthur. On a failed save, the target is {@condition frightened} of the Arthur for 1 minute. If a creature {@condition frightened} by this effect ends its turn more than 30 feet away from the Arthur, it can attempt another Wisdom saving throw to end the effect on it."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"legendaryActions": 3,
+			"isNamedCreature": true,
+			"conditionInflict": [
+				"frightened"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"constant": [
+						"{@spell king's rebuke|KingsofThePast}"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell hellish rebuke}",
+								"{@spell inflict wounds}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell crown of madness}",
+								"{@spell darkness}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell bestow curse}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell confusion}"
+							],
+							"slots": 1
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"reaction": [
+				{
+					"name": "Kings Rebuke",
+					"entries": [
+						"{@spell King's Rebuke|KingsofThePast}"
+					]
+				},
+				{
+					"name": "Protection",
+					"entries": [
+						"When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "The King's Touch",
+					"entries": [
+						"Arthur can cast {@spell Inflict Wounds} at level one for free. The target must have attacked Arthur and the target must succeed a DC18 Wisdom saving throw. On success the target takes no damage, on fail the target takes half of 3d10."
+					]
+				},
+				{
+					"name": "The Once and Future King",
+					"entries": [
+						"Arthur gives out a powerful command. Any non allied human within 60 ft. of Arthur must make a DC18 Charisma saving throw. On fail the target immediately kneels before Arthur ({@condition stunned}) for 1 round.",
+						"You can avert your hearing however you are no longer able to take attacks of opportunity that are not directly in your line of sight and you can be surprised by enemies not in your line of sight.",
+						"Counts as all three legendary actions for a round."
+					]
+				}
+			],
+			"mythicHeader": [
+				"At the start of each round, the GM roles 1d4 to determine which lair action occurs. In the event it is targeted, every player will roll a d20, lowest losing. In the event of a tie, use dex mod. If there is still a tie the action happens to both"
+			],
+			"mythic": [
+				{
+					"name": "The Fall of Camelot",
+					"entries": [
+						"Rubble falls on a random target. Target must succeed a {@dc 16} Dexterity Saving throw or take {@damage 1d8} bludgeoning damage."
+					]
+				},
+				{
+					"name": "Beneath the Floor of Camelot",
+					"entries": [
+						"The floor weakens beneath a random target. Target must success a {@dc 16} Dexterity save or go {@condition prone}."
+					]
+				},
+				{
+					"name": "King's Command",
+					"entries": [
+						"A {@creature Feathergale Knight|PotA} comes to aid Arthur. "
+					]
+				},
+				{
+					"name": "The (Un)Holy Grail",
+					"entries": [
+						"Arthur drinks from the holy grail and gains back {@damage 1d10 + 5} health"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"fluff": {
+				"entries": [
+					"Once the king who saved Albion, Arthur has risen in a time of need once more. However, on a quest once again to find the holy grail, he is cursed by it. Giving him an army of undead soldiers and great power at the cost of what made him the once and future king, his humanity."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdnb.artstation.com/p/assets/images/images/000/157/045/large/he-jeng-huang-s.jpg?1407321401"
+						}
+					}
+				]
+			},
+			"environment": [
+				"urban"
+			],
+			"trait": [
+				{
+					"name": "Aura of Hate",
+					"entries": [
+						"All fiend and Undead Allies within 10ft gain a +5 to damage rolls."
+					]
+				}
+			]
+		}
+	]
+}
